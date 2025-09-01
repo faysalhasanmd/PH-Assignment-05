@@ -5,6 +5,9 @@
 }
 
 @media screen and (max-width: 576px) {
+  #copyButton {
+    height: 40px;
+  }
   #navbar {
     flex-direction: column;
   }
