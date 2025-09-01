@@ -31,46 +31,75 @@ Example: Like asking, “Give me all students wearing red shirts.”
    container.appendChild(crEl );
 
 3. What is **Event Bubbling** and how does it work?
-Event bubbling means that when an event "click" happens on an element, it first runs the event on that element, and then the event goes upwards through its parent elements, one by one, until it reaches the "<body> and document".
-<div id="container">
-  <button class="btn">Button 1</button>
-  <button class="btn">Button 2</button>
-  <button class="btn">Button 3</button>
-</div>
+   Event bubbling means that when an event "click" happens on an element, it first runs the event on that element, and then the event goes upwards through its parent elements, one by one, until it reaches the "<body> and document".
+   <div id="container">
+   <button class="btn">Button 1</button>
+   <button class="btn">Button 2</button>
+   <button class="btn">Button 3</button>
+   </div>
 
-<script>
-  const buttons = document.querySelectorAll(".btn");
-  for (const button of buttons) {
-    button.addEventListener("click", function () {
-      console.log(`${button.innerText} clicked`);
-    });
-  }
-
-  document.getElementById("container").addEventListener("click", function () {
-    console.log("Container clicked");
-  });
-</script>
+   <script>
+   const buttons = document.querySelectorAll(".btn");
+   for (const button of buttons) {
+   button.addEventListener("click", function () {
+     console.log(`${button.innerText} clicked`);
+   });
+   }
+   
+   document.getElementById("container").addEventListener("click", function () {
+   console.log("Container clicked");
+   });
+   </script>
 
 4. What is **Event Delegation** in JavaScript? Why is it useful?
    Event Delegation is a technique in JavaScript where instead of adding event listeners to many child elements individually, you add one event listener to a parent element. Then, using the event object (e.target), you check which child element triggered the event.
 
-Less code – You don't need to attach an event to every single child element.
-Dynamic elements – Works even for elements added after the page loads.
-Better performance – Fewer event listeners means faster execution when you have many elements.
+   Less code – You don't need to attach an event to every single child element.
+   Dynamic elements – Works even for elements added after the page loads.
+   Better performance – Fewer event listeners means faster execution when you have many elements.
 
-<div id="container">
-  <button class="btn">Button 1</button>
-  <button class="btn">Button 2</button>
-</div>
+    <div id="container">
+    <button class="btn">Button 1</button>
+    <button class="btn">Button 2</button>
+    </div>
 
-<script>
-  const container = document.getElementById("container");
-
-  container.addEventListener("click", function (e) {
+    <script>
+    const container = document.getElementById("container");
+   
+    container.addEventListener("click", function (e) {
     if (e.target.classList.contains("btn")) {
       console.log(`${e.target.innerText} clicked`);
     }
-  });
-</script>
+    });
+    </script>
 
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
+
+   1. preventDefault()
+   Stops the default browser action for an event.
+   Does not stop the event from bubbling.
+   Example: Prevent a link from opening or a form from submitting.
+   <a href="https://example.com" id="link">Go to Example</a>
+   <script>
+   document.getElementById("link").addEventListener("click", function(e) { 
+   e.preventDefault(); 
+   console.log("Link click prevented!");
+   });
+   </script>
+
+6. stopPropagation()
+   stopPropagation()in JavaScript is used to stop an event from going up to parent elements. When you click on an element, normally the event goes to its parent too (bubbling). If you use stopPropagation(), only the clicked element reacts, and the parent does nothing. It does not stop the default browser action like opening a link or submitting a form.
+   <div id="parent"> 
+   <button id="child">Click Me</button>
+   </div>
+
+   <script>
+   document.getElementById("parent").addEventListener("click", function(e) { 
+   console.log("Parent clicked");
+   });
+   
+   document.getElementById("child").addEventListener("click", function(e) { 
+   e.stopPropagation(); 
+   console.log("Child clicked");
+   });
+   </script>
