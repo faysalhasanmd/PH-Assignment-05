@@ -1,1 +1,32 @@
 @import "tailwindcss";
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  #navbar {
+    flex-direction: column;
+  }
+  #Background {
+    flex-direction: column;
+    height: 350px;
+  }
+  #card-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .totalCard {
+    flex-direction: column-reverse;
+  }
+  #card-section {
+    width: 100%;
+  }
+  .historyRes {
+    width: 100%;
+  }
+  .cardOne {
+    width: 210px;
+    height: 50px;
+  }
+}
