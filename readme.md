@@ -6,19 +6,19 @@
    -Works with three attributes, which are unique on a page.
    Example: Like calling one student by their roll number.
 
-1.2. getElementsByClassName
--Finds many elements that have the same class name.
--Returns a list (HTMLCollection).
-Example: Like calling all students wearing the same uniform color.
+   1.2. getElementsByClassName
+   -Finds many elements that have the same class name.
+   -Returns a list (HTMLCollection).
+   Example: Like calling all students wearing the same uniform color.
 
-1.3 querySelector
-Finds the first element that matches a CSS selector (id, class, tag, etc.).
-Example: Like asking, “Give me the first student wearing a red shirt.”
+   1.3 querySelector
+   Finds the first element that matches a CSS selector (id, class, tag, etc.).
+   Example: Like asking, “Give me the first student wearing a red shirt.”
 
-1.4 querySelectorAll
--Finds all elements that match a CSS selector.
--Returns a list (NodeList) you can loop through easily.
-Example: Like asking, “Give me all students wearing red shirts.”
+   1.4 querySelectorAll
+   -Finds all elements that match a CSS selector.
+   -Returns a list (NodeList) you can loop through easily.
+   Example: Like asking, “Give me all students wearing red shirts.”
 
 2. How do you **create and insert a new element into the DOM**?
    1.Create - const div = Document.CreateElement("Div");
