@@ -79,11 +79,11 @@
    Stops the default browser action for an event.
    Does not stop the event from bubbling.
    Example: Prevent a link from opening or a form from submitting.
-   <a href="https://example.com" id="link">Go to Example</a>
+   <a href="https://example.com" id="link">Example</a>
    <script>
    document.getElementById("link").addEventListener("click", function(e) { 
    e.preventDefault(); 
-   console.log("Link click prevented!");
+   console.log("Link click prevented!"); 
    });
    </script>
 
