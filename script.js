@@ -188,7 +188,7 @@ function copyFunction(e) {
 
   const serviceNum =
     button.parentElement.parentElement.querySelector(".codeNum").innerText;
-  console.log(serviceNum);
+  // console.log(serviceNum);
 
   navigator.clipboard.writeText(serviceNum);
   alert(`📋The Number is Copy: ${serviceNum}`);
