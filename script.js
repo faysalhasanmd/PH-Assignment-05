@@ -178,7 +178,7 @@ document
     allCard("Bangladesh Railway", 163);
   });
 
-//----------------------------------------------------------------//
+//--------------------------------------------------------------//
 function copyFunction(e) {
   const copyValue = parseInt(updateCopy.innerText);
   const backCopy = copyValue + 1;
@@ -200,7 +200,7 @@ for (let i = 0; i <= 8; i++) {
     btn.addEventListener("click", copyFunction);
   }
 }
-//-----------------------------------------------------------------//
+//---------------------------------------------------------------//
 
 function heartFunction() {
   const Heart = parseInt(updateHeart.innerText);

@@ -87,7 +87,7 @@ Example: Like asking, “Give me all students wearing red shirts.”
    });
    </script>
 
-6. stopPropagation()
+   2. stopPropagation()
    stopPropagation()in JavaScript is used to stop an event from going up to parent elements. When you click on an element, normally the event goes to its parent too (bubbling). If you use stopPropagation(), only the clicked element reacts, and the parent does nothing. It does not stop the default browser action like opening a link or submitting a form.
    <div id="parent"> 
    <button id="child">Click Me</button>
