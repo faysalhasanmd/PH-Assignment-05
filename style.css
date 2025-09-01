@@ -33,3 +33,23 @@
     height: 50px;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .totalCard {
+    flex-direction: column-reverse;
+  }
+  #card-section {
+    width: 100%;
+  }
+  .historyRes {
+    width: 100%;
+  }
+  #card-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #Background {
+    flex-direction: column;
+    height: 350px;
+  }
+}
