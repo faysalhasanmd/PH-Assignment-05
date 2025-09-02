@@ -91,13 +91,13 @@ document
     if (validCoin >= 20) {
       const minusCoin = validCoin - 20;
       coinTotal.innerText = minusCoin;
-      alert(`📞Calling Ambulance-Service 12345678910...`);
+      alert(`📞Calling Ambulance-Service 123456789...`);
     } else if (validCoin < 20) {
       this.disabled = true;
       alert(`🪙Do Not Coin Available!`);
       return;
     }
-    allCard("Ambulance Service", 12345678910);
+    allCard("Ambulance Service", 123456789);
   });
 document
   .getElementById("Women-&-Child-HelpLine")
@@ -123,13 +123,13 @@ document
     if (validCoin >= 20) {
       const minusCoin = validCoin - 20;
       coinTotal.innerText = minusCoin;
-      alert(`📞Calling Anti-Corruption-Helpline 163...`);
+      alert(`📞Calling Anti-Corruption-Helpline 106...`);
     } else if (validCoin < 20) {
       this.disabled = true;
       alert(`🪙Do Not Coin Available!`);
       return;
     }
-    allCard("Anti Corruption Helpline", 163);
+    allCard("Anti Corruption Helpline", 106);
   });
 document
   .getElementById("Electricity-Helpline")
@@ -169,7 +169,7 @@ document
     if (validCoin >= 20) {
       const minusCoin = validCoin - 20;
       coinTotal.innerText = minusCoin;
-      alert(`📞Calling Bangladesh-Railway 163...`);
+      alert(`📞Calling Bangladesh-Railway HelpLine 163...`);
     } else if (validCoin < 20) {
       this.disabled = true;
       alert(`🪙Do Not Coin Available!`);
