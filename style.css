@@ -4,9 +4,13 @@
   display: none;
 }
 .cardOne:hover {
-  background-color: rgb(228, 216, 200);
+  background-color: rgb(176, 196, 224);
   transition: 0.5s;
   color: black;
+}
+.backgrond-color:hover {
+  background-color: rgb(230, 226, 221);
+  transition: 0.5s;
 }
 @media screen and (max-width: 576px) {
   #copyButton {
